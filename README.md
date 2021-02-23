@@ -19,8 +19,8 @@ python3 chat.py -c <channel_name>
 python3 chat.py
 
 # REQUIREMENTS:
-- socket
-- datetime
-- re
-- optparse
-- os
+```pip install socket
+pip install datetime
+pip install re
+pip install optparse
+pip install os```
