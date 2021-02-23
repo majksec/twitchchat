@@ -6,7 +6,7 @@ Realtime terminal twitch chat project.
 
 # MUST CHANGE:
 You MUST change 2 things in the script:
-```* Line 13
+`* Line 13
 name = '<your_twitch_nickname'
 * line 15
 oauth = '<your_oauth_token>' #Token can be found here: https://twitchapps.com/tmi/
@@ -18,9 +18,12 @@ python3 chat.py -c <channel_name>
 # To join your channel chat run program without arguments:
 python3 chat.py
 
+# Install
+`git clone https://github.com/majksec/twitchchat`
+
 # REQUIREMENTS:
-```pip install socket
+`pip install socket
 pip install datetime
 pip install re
 pip install optparse
-pip install os
+pip install os`
