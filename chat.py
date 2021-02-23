@@ -34,6 +34,12 @@ sock.send(f"JOIN #{channel}\n".encode('utf-8'))
 print('connected @ ' + datetime.datetime.now().strftime("%H:%M:%S"))
 
 while True:
+
+    if oauth =='' or name =='':
+        print("Please insert valid oauth Token and name in program!")
+        break
+    
+    # reciving the message
     response = sock.recv(1024).decode()
     if len(response) != 0:
         res = "".join(response)
@@ -41,8 +47,9 @@ while True:
     # tell server that we are still listening
         if res.split()[0] == 'PING': 
             sock.send(f"PONG\n".encode('utf-8'))
+
         else: 
-        # set parameters
+            # set parameters
             resList = res.split()
             user    = re.findall(":(.*)!.*$", resList.pop(0))
             action  = resList.pop(0)
@@ -62,5 +69,6 @@ while True:
                 # format and display message
                 timestamp = datetime.datetime.now().strftime("%H:%M:%S")
                 print(timestamp + " || " + ''.join(user) + tab + " || "+ msg[1:])
+    
     else:
         print("No data from server")
