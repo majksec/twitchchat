@@ -6,9 +6,9 @@ Realtime terminal twitch chat project.
 
 # MUST CHANGE:
 You MUST change 2 things in the script:
-Line 13
+* Line 13
 - name = '<your_twitch_nickname'
-line 15
+* line 15
 - oauth = '<your_oauth_token>' #Token can be found here: https://twitchapps.com/tmi/
 
 # To join specific channel use:
