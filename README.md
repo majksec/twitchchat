@@ -23,8 +23,8 @@ python3 chat.py -c <channel_name>
 python3 chat.py
 
 # REQUIREMENTS:
-socket
-datetime
-re
-optparse
-os
+- socket
+- datetime
+- re
+- optparse
+- os
