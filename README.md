@@ -22,8 +22,8 @@ python3 chat.py
 `git clone https://github.com/majksec/twitchchat`
 
 # REQUIREMENTS:
-`pip install socket
+```pip install socket
 pip install datetime
 pip install re
 pip install optparse
-pip install os`
+pip install os```
