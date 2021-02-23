@@ -7,11 +7,11 @@ Realtime terminal twitch chat project.
 # MUST CHANGE:
 You MUST change 2 things in the script:
 
-Line 15
+Line 13
 
 name = '<your_twitch_nickname'
 
-line 16
+line 15
 
 oauth = '<your_oauth_token>' #Token can be found here: https://twitchapps.com/tmi/
 
