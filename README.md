@@ -24,11 +24,7 @@ python3 chat.py
 
 # REQUIREMENTS:
 socket
-
 datetime
-
 re
-
 optparse
-
 os
