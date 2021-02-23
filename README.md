@@ -1,5 +1,5 @@
 # twitchchat
-Terminal twitch chat project.
+Realtime terminal twitch chat project.
 
 # Contributors:
 @shkabo | https://github.com/shkabo
