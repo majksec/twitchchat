@@ -1,0 +1,3 @@
+Update 2/26/2021:
+  Reading messages should be much more easier to do now.
+    If message is longer than 60 characters nessage will be written in new row with rest of message.
