@@ -40,7 +40,10 @@ while True:
         break
     
     # reciving the message
-    response = sock.recv(1024).decode()
+    try:
+        response = sock.recv(1024).decode()
+    except:
+        continue
     if len(response) != 0:
         res = "".join(response)
 
@@ -65,8 +68,6 @@ while True:
                     tab = "\t"
                 else:
                     tab = "\t\t"
-                
-                indent = "\t\t\t"
 
                 # format and display message
                 timestamp = datetime.datetime.now().strftime("%H:%M:%S")
