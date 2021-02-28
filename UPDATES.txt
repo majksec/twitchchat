@@ -1,3 +1,7 @@
 Update 2/26/2021:
   Reading messages should be much more easier to do now.
     If message is longer than 60 characters nessage will be written in new row with rest of message.
+
+Update 2/28/2021:
+  Fixed problem with ASCII characters.
+    Program would crash if message contains ASCII characters because program decode only UFT-8 characters.
