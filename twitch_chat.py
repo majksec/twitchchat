@@ -42,7 +42,10 @@ while True:
         break
 
     # reciving the message
-    response = sock.recv(1024).decode()
+    try:
+        response = sock.recv(1024).decode()
+    except:
+        continue
     if len(response) != 0:
         res = "".join(response)
 
